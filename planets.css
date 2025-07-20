@@ -234,9 +234,9 @@ body{
 
 .planets-card{
     background: rgba(255, 255, 255, 0.09);
-    border-radius: 16px;
-    padding: 22px 18px;
-    width:260px;
+    border-radius: 18px;
+    padding: 24px 20px;
+    width:240px;
     box-shadow: 0 0 14px #0007,0 0 14px #942151a0;
     transition: transform 0.2s, background 0.2s;
     backdrop-filter: blur(4px);
