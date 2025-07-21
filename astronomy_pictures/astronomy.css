@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 * {
             margin: 0;
             padding: 0;
@@ -94,7 +95,7 @@
             text-decoration: none;
             color: #fff;
             font-family: 'Roboto';
-            font-size: 1.2rem;
+            font-size: 0.8rem;
             cursor: pointer;
         }
         .sidebar ul li a,.logo a{
@@ -102,14 +103,14 @@
             text-decoration: none;
             color: #fff;
             font-family: 'Roboto';
-            font-size: 1.2rem;
+            font-size: 1rem;
             cursor: pointer;
         }
         .navbar ul li a:hover{
-            color:  #80381b;
+            color:  #ea8d68;
         }
         .sidebar ul li a:hover{
-            color:  #80381b;
+            color:  #ef845a;
         }
         .logo a{
             margin-left: 60px;
@@ -118,7 +119,7 @@
             word-spacing: 5px;
         }
         .signup:hover{
-            background-color: #441e0f;
+            background-color: #dd6e43;
             transform: scale(1.02);
             transition: transform 0.3s ease-in-out;
         }
@@ -651,7 +652,7 @@
             color:#fff;
         }
         .follow p a:hover{
-            color:#80381b;
+            color:#c15f38;
         }
         .end{
             margin-left: 80px;
@@ -666,7 +667,7 @@
         }
         .terms p a{
             text-decoration: none;
-            color: #80381b;
+            color: #df6f43;
         }
         .terms p a:hover{
             cursor: pointer;
