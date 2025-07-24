@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+      background-color: #000;
+      color: #fff;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: #80381b;
+  font-family: "Russo One", sans-serif;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+#controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-right: 60px;
+  margin-top: 20px;
+}
+select, button {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-family: 'Roboto';
+}
+button {
+  background-color: #80381b;
+  color: #0b0c10;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#searchBtn{
+    color: #fff;
+    font-family: 'Roboto';
+}
+button:hover {
+  background-color: #441e0f;
+}
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-left: 30px;
+  margin-right: 30px;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.image-card {
+  background: #80381b;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+}
+.image-card:hover{
+    transform: scale(1.03);
+    transition: transform 0.3s ease-in-out;
+}
+.image-card img {
+  width: 100%;
+  border-radius: 8px;
+  height: 80%;
+  margin-bottom: 0.5rem;
+  object-fit: cover;
+}
+.image-card h3 {
+  font-size: 1.2em;
+  margin: 0.2rem 0;
+  color: #000;
+  font-family: 'Roboto';
+  font-weight: 700;
+}
+.image-card p {
+  font-size: 0.8em;
+  color: #fff;
+  flex-grow: 1;
+  margin: 0 0 0.5rem 0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.image-card button.read-more-btn {
+  align-self: center;
+  padding: 0.4rem 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #551603;
+  color: #000;
+  transition: background-color 0.3s;
+}
+.image-card button.read-more-btn:hover {
+  background-color: #3a0e01;
+  color: #fff;
+}
+#modalOverlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.75);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+#modalContent {
+  background: #000;
+  border-radius: 10px;
+   max-width: 600px;
+  width: 90%;
+  max-height: 80vh;
+  padding: 20px;
+  overflow-y: auto;
+  color: #fff;
+  font-family:'Roboto';
+  position: relative;
+  box-shadow: 0 0 15px #551603;
+  font-size: 12px;
+}
+#modalContent h2 {
+  margin-top: 0;
+  color: #80381b;
+  font-size: 20px;
+}
+#modalCloseBtn {
+  position: absolute;
+  top: 3px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #80381b;
+  cursor: pointer;
+}
+#modalContent a{
+    color: #80381b;
+    font-size: 14px;
+}
+#loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #80381b;
+  font-family: 'Roboto';
+}
+@media(max-width:840px){
+  #modalContent{
+    width: 80%;
+  }
+  .nav{
+    display: flex;
+    flex-direction: column;
+  }
+  h1{
+    margin-left: 0;
+  }
+  #controls{
+    width: 80%;
+    margin-right: 0;
+  }
+  select{
+    width: 70%;
+  }
+  button{
+    width: 30%;
+  }
+  #modalTitle{
+    width: 80%;
+  }
+}
+@media(max-width: 796px){
+  .read-more-btn{
+    font-size: 12px;
+  }
+}
+@media(max-width: 700px){
+  h1{
+    font-size: 2.5rem;
+  }
+  #modalContent h2{
+    font-size: 16px;
+  }
+  #modalDescription{
+    font-size: 12px;
+  }
+  #modalLink a{
+    font-size: 16px;
+  }
+}
+@media(max-width: 490px){
+  h1{
+    font-size: 2rem;
+  }
+  .image-card h3{
+    font-size: 0.9rem;
+  }
+  .image-card p{
+    font-size: 0.7rem;
+  }
+  #modalContent h2{
+    font-size: 12px;
+  }
+  #modalDescription{
+    font-size: 10px;
+  }
+}
+@media(max-width: 420px){
+  .read-more-btn{
+    font-size: 11px;
+  }
+}
+@media(max-width: 364px){
+  .read-more-btn{
+    font-size: 8px;
+  }
+  h1{
+    font-size: 1.5rem;
+  }
+  #roverselect{
+    padding: 5px 12px;
+  }
+  button{
+    width: 30%;
+  }
+}

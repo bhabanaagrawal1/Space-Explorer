@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style@explore.css">
+    <title>Explore</title>
+</head>
+<body>
+    <div class="nav">
+        <h1>Machines on Mars</h1>
+    <div id="controls">
+    <select id="roverSelect">
+      <option value="all" selected>All Rovers</option>
+      <option value="curiosity">Curiosity</option>
+      <option value="perseverance">Perseverance</option>
+      <option value="opportunity rover">Opportunity</option>
+      <option value="spirit">Spirit</option>
+      <option value="ingenuity">Ingenuity</option>
+      <option value="sojourner">Sojourner</option>
+      <option value="zhurong">Zhurong</option>
+    </select>
+    <button id="searchBtn">Search</button>
+  </div>
+    </div>
+
+  <div id="loading" style="display:none;">Loading images...</div>
+  <div id="gallery"></div>
+
+  <!-- Modal -->
+  <div id="modalOverlay">
+    <div id="modalContent">
+      <button id="modalCloseBtn">&times;</button>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDescription"></p>
+      <a id="modalLink" href="#" target="_blank" rel="noopener noreferrer">View full details on NASA site</a>
+    </div>
+  </div>
+<script src="script@explore.js"></script>
+</body>
+</html>
