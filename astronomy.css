@@ -7,12 +7,12 @@
         /* --- Navbar & Sidebar Styles --- */
         .navbar{
             width: 100%;
-            height: 12%;
+            height: 10%;
             display:flex;
             justify-content: space-between;
             align-items: center;
-            /* padding-top: 20px;
-            padding-bottom: 20px; */
+            padding-top: 20px;
+            padding-bottom: 20px;
             background: #0808086b;
             backdrop-filter: blur(10px);
             position: fixed;
@@ -394,7 +394,7 @@
             padding: 1rem;
             font-size: 1.1rem;
             line-height: 1.4;
-            background: linear-gradient(45deg, rgb(67, 94, 151), rgba(255, 255, 255, 0.733));
+            background: linear-gradient(45deg, #3084d8, rgba(255, 255, 255, 0.733));
         }
 
         .loading {
@@ -495,6 +495,12 @@
 @media(max-width: 520px){
     .comb{
         gap: 10px;
+    }
+            .search-btn,.quick-btn,.next-btn{
+        background: linear-gradient(45deg, #3084d8, rgba(255, 255, 255, 0.733));
+    }
+            .search-btn:hover,.quick-btn:hover,.next-btn:hover{
+        background: linear-gradient(45deg,rgba(255, 255, 255, 0.733),#3084d8);
     }
 }
 @media(max-width: 420px){
@@ -927,7 +933,7 @@
 
         @media(max-width: 420px){
             .navbar{
-                transform: translateY(-30px);
+                transform: translateY(-23.5px);
             }
             .header h1 {
                 font-size: 2.2rem;
