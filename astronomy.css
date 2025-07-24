@@ -502,6 +502,21 @@
             .search-btn:hover,.quick-btn:hover,.next-btn:hover{
         background: linear-gradient(45deg,rgba(255, 255, 255, 0.733),#3084d8);
     }
+            .sidebar{
+                        box-shadow: -10px 0 10px #3084d8;
+            }
+            .sidebar ul li a:hover{
+            color:  #3084d8;
+        }
+            .footer div p:hover{
+            color: #3084d8;
+        }
+            .follow p a:hover{
+            color: #3084d8;
+        }
+             .terms p a:hover{
+            color:#3084d8;
+        }
 }
 @media(max-width: 420px){
     .logo a{
