@@ -608,6 +608,9 @@ body,html{
     .l h1{
         font-size: 2.5rem;
     }
+    .planet h1{
+        font-size: 2.5rem;
+    }
     .mars_rover{
         height: auto;
     }
